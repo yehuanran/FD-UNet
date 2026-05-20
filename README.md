@@ -3,7 +3,7 @@
 This is an official PyTorch implementation of "[**FD-UNet: A Frequency Decoupled U-Net for Building Segmentation in High-Resolution Remote Sensing Imagery**]".
 
 # Introduction
-Accurate building segmentation in high-resolution (HR) remote sensing imagery is fundamentally challenged by the complex interweaving of high-frequency structural boundaries and low-frequency semantic regions. Traditional spatial-domain convolution filters often fail to adaptively decouple these distinct features, leading to common failure modes such as boundary blurring and segmentation fragmentation. To address this frequency-entanglement dilemma, we propose FD-UNet, a novel Frequency Decoupled U-Net architecture for high-fidelity building extraction. Specifically, we propose the Frequency Dynamic ConvNeXt (FDCNX) encoder, which incorporates Frequency Dynamic Convolution (FDC) to explicitly decouple and adaptively extract distinct frequency bands. This mechanism significantly enhances the precision of boundary delineation and roof texture representation without increasing parameter redundancy. To ensure effective feature reconstruction, a Multi-dimensional Hybrid Attention with Residual (MHAR) decoder is developed. By synergistically leveraging a Dual-branch Linear Attention Block (DLAB) for semantic bridging and a Multi-scale Channel Spatial Attention Block (MCSAB) for noise suppression, the decoder progressively purifies cross-stage features during the upsampling process.
+
 <center> 
 <img src="DRAU-Net.png" width="auto" height="auto">
 </center>
